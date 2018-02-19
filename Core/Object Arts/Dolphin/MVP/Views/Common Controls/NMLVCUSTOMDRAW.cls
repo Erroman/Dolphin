@@ -70,12 +70,7 @@ forecolor: aColor
 iSubItem
 	"Answer the receiver's iSubItem field as a Smalltalk object."
 
-	^bytes sdwordAtOffset: ##(self offsetOf: #iSubItem)!
-
-itemHandle
-	"Answer the 'handle' of the receiver's item."
-
-	^self dwItemSpec + 1! !
+	^bytes sdwordAtOffset: ##(self offsetOf: #iSubItem)! !
 !NMLVCUSTOMDRAW categoriesFor: #backcolor!accessing!public! !
 !NMLVCUSTOMDRAW categoriesFor: #backcolor:!accessing!public! !
 !NMLVCUSTOMDRAW categoriesFor: #clrText!**compiled accessors**!public! !
@@ -87,7 +82,6 @@ itemHandle
 !NMLVCUSTOMDRAW categoriesFor: #forecolor!accessing!public! !
 !NMLVCUSTOMDRAW categoriesFor: #forecolor:!accessing!public! !
 !NMLVCUSTOMDRAW categoriesFor: #iSubItem!**compiled accessors**!public! !
-!NMLVCUSTOMDRAW categoriesFor: #itemHandle!accessing!private! !
 
 !NMLVCUSTOMDRAW class methodsFor!
 
